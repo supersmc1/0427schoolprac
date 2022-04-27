@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- h1 태그를 클릭할때마다 글씨크기가 1px 씩 커지는 인터렉션을 구현하세여 -->
+  <h1 id="root">hello javascript!</h1>
+
+  <script>
+    const h1 = document.getElementById("root")
+    //console.log(h1);
+    let value = 100
+    //console.log(click);
+    h1.addEventListener("click",function(){
+      for(let i = 1; i < value; i++) {
+        h1.style.fontSize = `${i}px`;
+      }
+    });
+  </script>
+</body>
+</html>
